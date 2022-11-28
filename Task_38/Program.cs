@@ -12,7 +12,7 @@ PrintArray(array);
 // FindDifMaxMin(array);
 Console.WriteLine();
 double different = FindMinMax(array);
-Console.Write($"\tРазница = {different}");
+Console.Write($"\tРазница = {Math.Round(different, 4)}");
 
 
 void FillArray(double[] arr)
@@ -29,11 +29,11 @@ void PrintArray(double[] arr)
     {
         if (i == arr.Length - 1)
         {
-            Console.WriteLine($"{arr[i]}");
+            Console.WriteLine($"{Math.Round(arr[i], 4)}");
         }
         else
         {
-            Console.Write($"{arr[i]},  ");
+            Console.Write($"{Math.Round(arr[i], 4)},  ");
         }
     }
 }
