@@ -11,7 +11,7 @@ FillArray(array);
 PrintArray(array);
 // FindDifMaxMin(array);
 Console.WriteLine();
-double different = FindMinMax(array);
+double different = FindDifMinMax(array);
 Console.Write($"\tРазница = {Math.Round(different, 4)}");
 
 
@@ -38,7 +38,7 @@ void PrintArray(double[] arr)
     }
 }
 
-double FindMinMax(double[] arr)
+double FindDifMinMax(double[] arr)
 {
     int indexNumberMax = 0;
     int indexNumberMin = 0;
@@ -58,19 +58,3 @@ double FindMinMax(double[] arr)
     return result;
 }
 
-// void FindDifMaxMin(double[] arr)
-// {
-//     for (int i = 0; i < arr.Length - 1; i++)
-//     {
-//         int maxPosition = i;
-//         for (int j = i + 1; j < arr.Length; j++)
-//         {
-//             if (arr[j] > arr[maxPosition]) maxPosition = j;
-//         }
-//         double temporary = arr[i];
-//         arr[i] = arr[maxPosition];
-//         arr[maxPosition] = temporary;
-//     }
-//     double different = arr[0] - arr[arr.Length - 1];
-//     Console.WriteLine($"Разница = {different}");
-// }
