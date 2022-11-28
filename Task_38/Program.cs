@@ -54,8 +54,8 @@ double FindMinMax(double[] arr)
         }
     }
     if (arr.Length <= 1) return 0;
-    double different = arr[indexNumberMax] - arr[indexNumberMin];
-    return different;
+    double result = arr[indexNumberMax] - arr[indexNumberMin];
+    return result;
 }
 
 // void FindDifMaxMin(double[] arr)
