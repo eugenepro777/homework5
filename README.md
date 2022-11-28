@@ -1,2 +1,2 @@
-# C sharp homework4
-**Tasks 25, 27, 29**
+# C sharp homework5
+**Tasks 34, 36, 38**
